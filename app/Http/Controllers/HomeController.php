@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Response;
+use App\Address;
+use App\User;
 
 class HomeController extends Controller
 {
@@ -25,7 +27,8 @@ class HomeController extends Controller
      */
     public function index()
     {
-      
+      $user = Auth::user();
+      $addresses =  $user->addresses;
        return view('home');
     }
 }

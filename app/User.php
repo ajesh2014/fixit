@@ -50,4 +50,5 @@ class User extends Authenticatable
     {
         return $this->hasOne('App\UserType', 'usertype_id');
     }
+
 }

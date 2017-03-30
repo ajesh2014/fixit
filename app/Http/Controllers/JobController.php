@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\User;
+use Illuminate\Support\Facades\Auth;
 
 class JobController extends Controller
 {
@@ -14,6 +16,10 @@ class JobController extends Controller
     public function index()
     {
         //
+        $user = Auth::user();
+        $job_count = $user->jobs->count();
+         return view('view')->with('page_name', 'Jobs')
+                            ->with('item_count',  $job_count);
     }
 
     /**

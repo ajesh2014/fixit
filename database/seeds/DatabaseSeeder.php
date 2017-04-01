@@ -12,6 +12,8 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
+        /* COMMAND : php artisan db:seed */
+
         // $this->call(UsersTableSeeder::class);
         DB::table('users')->insert([
             'username' => str_random(10),

@@ -33,10 +33,11 @@ $factory->define(App\Address::class, function (Faker\Generator $faker) {
         'company' => str_random(20),
         'addressline1' => $faker->address,
         'addressline2' =>$faker->streetAddress,
-        'city' => $faker->postCode,
+        'postcode' => $faker->postcode,
+        'city' => $faker->city,
         'country' =>$faker->country,
-        'telephone1' => $faker->phone,
-        'telephone2' => $faker->phone,
+        'telephone1' => $faker->phoneNumber,
+        'telephone2' => $faker->phoneNumber,
         'is_default'=> true
     ];
 });   

@@ -8,7 +8,7 @@
                 <div class="panel-heading">Jobs</div>
 
                 <div class="panel-body">
-                    You have 0 Jobs
+                    You have {{$job_count}} Jobs
                 </div>
                 
             </div>

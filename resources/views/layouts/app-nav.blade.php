@@ -83,6 +83,61 @@
                 </div>
             </div>
         </nav>
+        <div class="nav-side-menu">
+    <div class="profile-userpic">
+     <img src="http://keenthemes.com/preview/metronic/theme/assets/admin/pages/media/profile/profile_user.jpg" class="img-responsive" alt="">
+    </div>
+                <!-- END SIDEBAR USERPIC -->
+                <!-- SIDEBAR USER TITLE -->
+    <div class="profile-usertitle">
+        <div class="profile-usertitle-name">
+                        Marcus Doe
+        </div>
+        <div class="profile-usertitle-job">
+                    Developer
+            </div>
+        </div>
+  
+    <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+  
+        <div class="menu-list">
+  
+            <ul id="menu-content" class="menu-content collapse out">
+                <li>
+                  <a href="#">
+                  <i class="fa fa-dashboard fa-lg"></i> Dashboard
+                  </a>
+                </li>
+
+                
+
+
+                <li data-toggle="collapse" data-target="#jobs" class="collapsed">
+                  <a href="#"><i class="fa fa-globe fa-lg"></i> Jobs <span class="arrow"></span></a>
+                </li>  
+                <ul class="sub-menu collapse" id="jobs">
+                  <li> <a href="{{ url('/jobs') }}"> View Jobs</a></li>
+                  <li> <a href="{{ url('/jobs/edit') }}">Edit Jobs</a></li>
+                  <li> <a href="{{ url('/jobs/quotes') }}">Job Quotes</a></li>
+                </ul>
+
+
+                 <li>
+                  <a href="#">
+                  <i class="fa fa-users fa-lg"></i> Messages
+                  </a>
+                </li>
+
+                 <li>
+                  <a href="#">
+                  <i class="fa fa-user fa-lg"></i> Profile
+                  </a>
+                  </li>
+
+            </ul>
+     </div>
+</div>
+     
     </div>
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
